@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="teeny-romatic-consequence",
-    version="0.0.2",
+    version="0.0.3",
     author="Antonin Thioux",
     author_email="antonin.thioux@gmail.com",
     description="testing pypi",
