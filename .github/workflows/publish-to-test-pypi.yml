@@ -32,6 +32,8 @@ jobs:
           --sdist
           --wheel
           --outdir dist/
+        env:
+          VERSION: ${{ variables.VERSION }}
 
       - name: Publish distribution 📦 to Test PyPI
         uses: pypa/gh-action-pypi-publish@release/v1

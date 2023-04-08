@@ -1,13 +1,16 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
+import os
+
+version = os.getenv('VERSION', '0.0.1')
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="teeny-romatic-consequence",
-    version="0.0.3",
+    version=version,
     author="Antonin Thioux",
     author_email="antonin.thioux@gmail.com",
     description="testing pypi",
