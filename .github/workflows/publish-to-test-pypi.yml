@@ -33,7 +33,7 @@ jobs:
           --wheel
           --outdir dist/
         env:
-          VERSION: ${{ variables.VERSION }}
+          VERSION: ${{ secrets.VERSION }}
 
       - name: Publish distribution 📦 to Test PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
